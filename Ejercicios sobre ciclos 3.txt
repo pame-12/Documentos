@@ -1,0 +1,11 @@
+#3.De la siguiente lista, con un bucle, itera todos sus valores y muestra una frase como  "El valor del elemento es: 
+#No Debes imprimir cuando el numero sea = 10.
+#rompe la ejecución del bucle cuando se encuentre el valor 356
+
+lista = [10,45,10,10,10,46,67,45,10,10,43,356,10,65,10,10]
+for X in lista:
+    if X != 10:
+        print('EL VALOR DEL BUCLE ES:',X)
+
+    if X == 356:
+        break

@@ -1,0 +1,5 @@
+
+Batista Bernardo       bbatista@itla.edu.do        profesor1
+Batista Bernardo       bbatista@itla.edu.do        profesor2
+Antonio Bernardo       bbatista@itla.edu.do        profesor2
+Bernardo Batista       bbatista@itla.edu.do        profesor3

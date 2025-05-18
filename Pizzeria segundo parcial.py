@@ -1,0 +1,43 @@
+# Título de la pizzería
+print('→> pizzeria pame')
+# Menú de pizzas
+menu_pizzas = {
+    "Pizza de jamon y queso": 450,
+    "Pizza de pepperoni": 550,
+    "Pizza vegetariana": 650,
+    "Pizza supreme": 800
+}
+
+# Cantidad de clientes en la pizzería
+clientes = ["Maria", "Pedro", "Juan", "Andres"]
+
+# Facturación de cada cliente
+for cliente in clientes:
+    print(f"\nOrden para {cliente}:")
+    orden_cliente = {}
+    total_cliente = 0
+    
+    # Elección de pizzas
+    while True:
+        print("\nMenú de pizzas:")
+        for pizza, precio in menu_pizzas.items():
+            print(f"{pizza}: ${precio}")
+        
+        pizza_elegida = input("Ingrese el nombre de la pizza que desea ordenar (o 'fin' si ya no desea seguir ordenando): ")
+        
+        if pizza_elegida == "fin":
+            break
+        
+        if pizza_elegida in menu_pizzas:
+            cantidad = int(input(f"Ingrese la cantidad de {pizza_elegida} que desee ordenar: "))
+            orden_cliente[pizza_elegida] = cantidad
+            total_cliente += cantidad * menu_pizzas[pizza_elegida]
+        else:
+            print("Pizza no válida. Por favor, elija una pizza del menú.")
+    
+    # Facturación del cliente
+    print(f"\nFactura para {cliente}:")
+    for pizza, cantidad in orden_cliente.items():
+        print(f"{cantidad} {pizza}: ${menu_pizzas[pizza]} cada una")
+    print(f"Total a pagar: ${total_cliente}")
+    print('GRACIAS POR SU COMPRA !!!!!!!')

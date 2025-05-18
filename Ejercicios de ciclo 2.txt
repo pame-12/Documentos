@@ -1,0 +1,37 @@
+#Tarea - Ejercicios sobre ciclos.
+#1. Crea un bucle for que imprima los valores del 7 al 14 Con una frase como esta: EL VALOR DEL BUCLE ES:
+print('Ejercicio 1')
+for x in range(7,15):
+    print('EL VALOR DEL BUCLE ES:',x,)
+
+
+
+#2.Crea un bucle for y luego un while que muestren una frase como las anteriores con los valores del 0 al -5000 en decrementos de 500.
+#Bucle for
+print('\nEjercicios #2')
+print('Bucle numero 1 con for')
+for i in range (0,-5500,-500):
+    print('EL VALOR DEL BUCLE ES:',i)
+    
+
+print('\n Bucle numero 2 con while')  
+#bucle while
+x = 0
+i = -5000
+
+while x >= i:
+    print('EL VALOR DEL BUCLE ES:',x)
+    x = x-500
+    
+print('\n')
+#3.De la siguiente lista, con un bucle, itera todos sus valores y muestra una frase como  "El valor del elemento es: 
+#No Debes imprimir cuando el numero sea = 10.
+#rompe la ejecución del bucle cuando se encuentre el valor 356
+print('Ejercicio #3')
+lista = [10,45,10,10,10,46,67,45,10,10,43,356,10,65,10,10]
+for X in lista:
+    if X != 10:
+        print('EL VALOR DEL BUCLE ES:',X)
+
+    if X == 356:
+        break
